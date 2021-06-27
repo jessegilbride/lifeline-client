@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreateTimelineItem component renders the UI as expected 1`] = `
+Array [
+  <section>
+    <h2
+      className="page-heading"
+    >
+      Add a timeline entry
+    </h2>
+  </section>,
+  <section>
+    <a
+      aria-label="cancel add entry"
+      className="btn btn-fixed cancel-add-item"
+      href="/timeline"
+      onClick={[Function]}
+    />
+    <form
+      className="create-timeline-form"
+      onSubmit={[Function]}
+    >
+      <div
+        className="form-section"
+      >
+        <label
+          htmlFor="title"
+        >
+          Title
+        </label>
+        <input
+          id="title"
+          name="title"
+          placeholder=""
+          required={true}
+          type="text"
+        />
+      </div>
+      <div
+        className="form-section"
+      >
+        <label
+          htmlFor="content"
+        >
+          Content
+        </label>
+        <textarea
+          id="content"
+          name="content"
+          required={true}
+          rows="10"
+        />
+      </div>
+      <div
+        className="form-section"
+      >
+        <label
+          htmlFor="entry_date"
+        >
+          Date
+        </label>
+        <input
+          id="entry_date"
+          name="entry_date"
+          required={true}
+          type="date"
+        />
+      </div>
+      <div
+        className="button-section"
+      >
+        <button
+          type="submit"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
+  </section>,
+]
+`;

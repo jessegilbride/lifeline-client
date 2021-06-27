@@ -1,0 +1,149 @@
+/* @import url('https://pagecdn.io/lib/normalize/8.0.1/normalize.min.css'); */
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+.App {
+  /* flexbox used to keep footer at bottom of pages ... requires <main> has flex:1 */
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - var(--top-spacing));
+}
+
+.App__header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: var(--top-spacing);
+  background-color: var(--header-bgcolor);
+  z-index: 1;
+}
+
+.App__main {
+  flex: 1;
+}
+
+/* .App__footer {} */
+
+.App__footer > div {
+  display: flex;
+  align-items: flex-end;
+  min-height: 80px;
+  padding: 1rem;
+  background: url(../../images/tile-darkNoise-140x140.jpg);
+  color: var(--mint);
+}
+
+.App__header > nav, .App__main > *, .App__footer > div, .page-width-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/********** GLOBAL STYLES **********/
+
+/* 
+The "scroll-padding-top" hack to allow for fixed headers to not overlap content with in-page jump links, via CSS-Tricks:
+https://css-tricks.com/fixed-headers-on-page-links-and-overlapping-content-oh-my/
+
+1) Create a CSS variable, "top-spacing" (suggested), in the top level (html or :root), at some large enough value to account for header height.
+2) Apply that "top-spacing" to a scroll-padding-top property in that top level.
+3) Apply the "top-spacing" to the margin-top of the body.
+4) Make sure the header with position:fixed also has top:0 applied to it.
+*/
+
+:root {
+  --top-spacing: 80px;
+  --header-bgcolor: #fff;
+  --blue: #477ACC;
+  --yellow: #EEFF00;
+  --green: #09a55e;
+  --red: #CA1551;
+  --orange: #FB4D3D;
+  --orange2: #FF7043;
+  --mint: #6CF1B7;
+  --eggplant: #420042;
+}
+
+html {
+  scroll-padding-top: var(--top-spacing);
+}
+
+body {
+  margin: var(--top-spacing) 0 0;
+  padding: 0;
+  font-family: "Raleway", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main > section {
+  min-height: 100px;
+  padding: 0 1rem;
+}
+
+main > section:last-of-type {
+  padding-bottom: 4rem;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: 1em;
+  margin: 0;
+}
+
+input,
+textarea {
+  border: 1px solid #999;
+  display: block;
+  padding: 0.5rem;
+  text-align: left;
+  border-radius: 4px;
+  width: calc(100% - 100px);
+  min-width: 290px;
+  max-width: 390px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  border: 1px solid #aaa;
+  background-color: #eee;
+  border-radius: 4px;
+  padding: 0.5rem 0.75rem;
+}
+
+.btn:hover {
+  filter: hue-rotate(30deg) brightness(1.2);
+}
+
+.page-top-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  background-size: cover;
+  background-position: center;
+}
+
+.page-top-banner h2 {
+  padding: 0.75em 1.5em;
+  background: #FFFD;
+  color: var(--eggplant);
+  font-size: 240%;
+  border-radius: 50px;
+}
+
+.page-heading {
+  margin: 0;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: xx-large;
+}
+
+.form-section {
+  margin-bottom: 2rem;
+}

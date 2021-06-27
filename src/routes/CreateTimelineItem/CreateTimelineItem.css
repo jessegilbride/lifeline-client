@@ -1,0 +1,15 @@
+.cancel-add-item {
+  background-color: var(--red);
+  color: white;
+  font-size: 1rem;
+}
+
+.cancel-add-item:after {
+  content: 'back';
+}
+
+@media screen and (max-width: 600px) {
+  .cancel-add-item:after {
+    content: '<<';
+  }
+}

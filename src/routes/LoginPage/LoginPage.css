@@ -1,0 +1,28 @@
+.LoginPage {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.register-message {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.register-link {
+  display: inline-block;
+  padding: 0.5rem;
+  background-color: var(--yellow);
+  text-decoration: none;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.LoginForm {
+  margin-top: 2rem;
+}
+
+.error-message {
+  border: 4px double var(--red);
+  width: fit-content;
+  padding: 0.5rem;
+}

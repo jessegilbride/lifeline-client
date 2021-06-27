@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component renders the UI as expected 1`] = `
+<div
+  className="App"
+>
+  <header
+    className="App__header"
+  >
+    <nav
+      role="navigation"
+    >
+      <a
+        className="logo"
+        href="/"
+        onClick={[Function]}
+      >
+        LifeLine
+      </a>
+      <input
+        className="menu-btn"
+        id="menu-btn"
+        type="checkbox"
+      />
+      <label
+        className="menu-icon"
+        htmlFor="menu-btn"
+      >
+        <span
+          className="menu-label-content"
+        >
+          Menu
+        </span>
+        <div />
+        <span
+          className="navicon"
+        />
+      </label>
+      <ul
+        className="menu"
+      >
+        <li
+          className="login-logout"
+        >
+          <a
+            className="login-logout-link btn"
+            href="/login"
+            onClick={[Function]}
+          >
+            Register/Login
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main
+    className="App__main"
+  >
+    <section
+      className="page-top-banner"
+      id="homepage-banner"
+    >
+      <h1
+        className=""
+      >
+        welcome
+      </h1>
+    </section>
+    <section
+      className="site-intro-section"
+    >
+      <p
+        className="site-intro-content"
+      >
+        sub-section
+      </p>
+    </section>
+  </main>
+  <footer
+    className="App__footer"
+  >
+    <div
+      className="page-width-container"
+    >
+      <small>
+        © IndieNexus 
+        2021
+      </small>
+    </div>
+  </footer>
+</div>
+`;

@@ -1,0 +1,54 @@
+#homepage-banner {
+  height: calc(100vh - var(--top-spacing) - 2rem);
+  /* background-image: url('../../images/homepage-banner.jpg'); */
+  background-repeat: no-repeat;
+}
+
+#homepage-banner h1 {
+  margin-block-start: -6rem;
+  padding: 1rem;
+  font-size: 2.4rem;
+  font-weight: normal;
+  text-align: center;
+  line-height: 1;
+}
+
+h1 span.bi-line {
+  display: block;
+  padding-top: 2rem;
+  font-size: smaller;
+  font-style: italic;
+}
+
+.feature {
+  background-color: lightsalmon;
+  color: black;
+}
+
+.site-intro-section {
+  padding: 1rem 1rem;
+  background-color: var(--eggplant);
+  border-top: 3px solid var(--yellow);
+  border-bottom: 3px solid var(--green);
+  text-align: center;
+}
+
+.site-intro-content {
+  font-size: 150%;
+  line-height: 1.5;
+  color: var(--mint);
+}
+
+@media screen and (min-width: 48em) {
+  #homepage-banner {
+    height: calc(100vh - var(--top-spacing) - 2rem);
+  }
+  #homepage-banner h1 {
+    /* margin-block-start: -2rem; */
+    font-size: 3.2rem;
+  }
+  .site-intro-section {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}

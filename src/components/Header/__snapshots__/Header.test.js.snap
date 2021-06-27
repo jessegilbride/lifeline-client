@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component renders the UI as expected 1`] = `
+<nav
+  role="navigation"
+>
+  <a
+    className="logo"
+    href="/"
+    onClick={[Function]}
+  >
+    LifeLine
+  </a>
+  <input
+    className="menu-btn"
+    id="menu-btn"
+    type="checkbox"
+  />
+  <label
+    className="menu-icon"
+    htmlFor="menu-btn"
+  >
+    <span
+      className="menu-label-content"
+    >
+      Menu
+    </span>
+    <div />
+    <span
+      className="navicon"
+    />
+  </label>
+  <ul
+    className="menu"
+  >
+    <li
+      className="login-logout"
+    >
+      <a
+        className="login-logout-link btn"
+        href="/login"
+        onClick={[Function]}
+      >
+        Register/Login
+      </a>
+    </li>
+  </ul>
+</nav>
+`;

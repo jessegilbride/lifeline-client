@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LineItem component renders the UI as expected 1`] = `
+<a
+  className="TimelineItem"
+  href="/item/undefined"
+  onClick={[Function]}
+>
+  <div
+    className="timeline-item-content"
+  >
+    <header
+      className="TimelineItem__header"
+    >
+      <h3
+        className="TimelineItem__heading"
+      />
+    </header>
+    <span
+      className="TimelineItem__date"
+    >
+      Invalid Date
+    </span>
+  </div>
+</a>
+`;

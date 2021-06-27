@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TimelinePage component renders the UI as expected 1`] = `
+Array [
+  <section
+    className="page-width-container page-top-banner"
+  >
+    <h2
+      className="page-heading"
+    />
+  </section>,
+  <section
+    className="page-width-container timeline-container"
+  >
+    <a
+      aria-label="add timeline entry"
+      className="btn btn-fixed add-item"
+      href="/create-timeline-item"
+      onClick={[Function]}
+    >
+      add item
+    </a>
+  </section>,
+]
+`;

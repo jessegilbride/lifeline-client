@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TimelineItemPage component renders the UI as expected 1`] = `
+<section
+  className="LineItemView"
+>
+  <header>
+    <h2 />
+  </header>
+  <p>
+    Invalid Date
+  </p>
+  <p />
+</section>
+`;

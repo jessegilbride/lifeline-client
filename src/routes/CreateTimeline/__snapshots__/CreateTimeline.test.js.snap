@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreateTimeline component renders the UI as expected 1`] = `
+Array [
+  <section>
+    <h2
+      className="page-heading"
+    >
+      Create Timeline
+    </h2>
+    <p>
+      (message to user)
+    </p>
+  </section>,
+  <section>
+    <form
+      className="create-timeline-form"
+      onSubmit={[Function]}
+    >
+      <div
+        className="form-section"
+      >
+        <label
+          htmlFor="line_name"
+        >
+          Timeline Name
+        </label>
+        <input
+          id="line_name"
+          name="line_name"
+          placeholder=""
+          required={true}
+          type="text"
+        />
+      </div>
+      <div
+        className="form-section"
+      >
+        <label
+          htmlFor="description"
+        >
+          Description
+        </label>
+        <textarea
+          id="description"
+          name="description"
+          required={true}
+          rows="10"
+        />
+      </div>
+      <div
+        className="button-section"
+      >
+        <button
+          type="submit"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
+  </section>,
+]
+`;

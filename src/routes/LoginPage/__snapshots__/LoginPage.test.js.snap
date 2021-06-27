@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginPage component renders the UI as expected 1`] = `
+<section
+  className="LoginPage"
+>
+  <h2
+    className="page-heading"
+  >
+    Login
+  </h2>
+  <p
+    className="register-message"
+  >
+    Don't have an account yet?
+  </p>
+  <a
+    className="register-link"
+    href="/register"
+    onClick={[Function]}
+  >
+    Register Here
+  </a>
+  <form
+    className="LoginForm"
+    onSubmit={[Function]}
+  >
+    <div
+      role="alert"
+    />
+    <div
+      className="user_name form-section"
+    >
+      <label
+        htmlFor="LoginForm__user_name"
+      >
+        User name
+      </label>
+      <input
+        defaultValue="demoUser"
+        id="LoginForm__user_name"
+        name="user_name"
+        required={true}
+      />
+    </div>
+    <div
+      className="password form-section"
+    >
+      <label
+        htmlFor="LoginForm__password"
+      >
+        Password
+      </label>
+      <input
+        defaultValue="Hello123"
+        id="LoginForm__password"
+        name="password"
+        required={true}
+        type="password"
+      />
+    </div>
+    <button
+      type="submit"
+    >
+      Login
+    </button>
+  </form>
+</section>
+`;

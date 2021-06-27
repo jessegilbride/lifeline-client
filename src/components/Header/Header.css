@@ -1,0 +1,209 @@
+/* MOBILE STYLES */
+
+a {
+  color: #000;
+}
+
+nav {
+  width: 100%;
+  height: var(--top-spacing);
+  scroll-padding-top: var(--top-spacing);
+  padding: 20px 0;
+  box-shadow: 0px 18px 18px 0px rgb(0 0 0 / 60%);
+  /* z-index: 3; */
+}
+
+nav .logo {
+  display: block;
+  float: left;
+  font-size: 2rem;
+  padding: 0 1rem;
+  text-decoration: none;
+}
+
+/* menu */
+
+nav ul.menu {
+  display: flex;
+  flex-direction: column;
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.4s linear;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0px 18px 18px 0px rgb(0 0 0 / 60%);
+}
+
+nav li {
+  padding: 2em 2em;
+  text-align: right;
+}
+
+nav li:first-of-type {
+  padding-top: 4rem;
+}
+
+nav li:last-of-type {
+  padding-bottom: 4rem;
+}
+
+nav li a {
+  text-decoration: none;
+}
+
+nav li a.btn {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  border-radius: 4px
+}
+
+nav li .view-timeline-link {
+  background-color: var(--green);
+  color: #fff;
+}
+
+nav li .create-timeline-link {
+  background-color: var(--blue);
+  color: white;
+}
+
+nav .create-profile-btn:hover {
+  background-color: indianred;
+}
+
+/* menu icon */
+
+nav .menu-icon .menu-label-content,
+.search-label-content {
+  /* NOTE: display:none works fine all by itself if the menu is tapped by a 
+  finger, but if a mouse (with its fine precision) is used, it can miss the 
+  hamburger menu lines; hence the other styles to cover the entire area. */
+  
+  /* display: none; */
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: -20px;
+  background: #33333333;
+  opacity: 0;
+}
+
+nav .menu-icon {
+  cursor: pointer;
+  float: right;
+  position: relative;
+  top: 19px;
+  right: 30px;
+  user-select: none;
+}
+
+nav .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s linear;
+  width: 40px;
+}
+
+nav .menu-icon .navicon:before,
+nav .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s linear;
+  width: 100%;
+}
+
+nav .menu-icon .navicon:before {
+  top: -10px;
+}
+
+nav .menu-icon .navicon:after {
+  top: 10px;
+}
+
+/* menu btn */
+
+nav .menu-btn {
+  display: none;
+  /* background-color: ; */
+}
+
+nav .menu-btn:checked ~ .menu {
+  max-height: 400px;
+}
+
+nav .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+nav .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+nav .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* DESKTOP STYLES */
+/* 48em (@16px) = 768px   */
+@media (min-width: 48em) {
+
+  nav {
+    padding-bottom: 20px;
+    border-bottom: 1px solid lightgrey;
+    box-shadow: unset;
+  }
+
+  nav ul.menu {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    clear: none;
+    float: right;
+    height: 100%;
+    max-height: none;
+    padding: 0;
+    box-shadow: unset;
+  }
+
+  nav li {
+    margin: 0 1rem;
+    padding: 0;
+  }
+
+  nav li.view-timelines {
+    order: 1;
+  }
+  
+  nav li.create-timeline {
+    order: 2;
+  }
+
+  nav li.login-logout {
+    order: 3;
+  }
+
+  nav li:first-of-type {
+    padding-top: 0;
+  }
+  nav li:last-of-type {
+    padding-bottom: 0;
+  }
+  
+  nav .menu-icon {
+    display: none;
+  }
+
+}

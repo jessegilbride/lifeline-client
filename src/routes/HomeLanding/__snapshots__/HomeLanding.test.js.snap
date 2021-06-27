@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeLanding component renders the UI as expected 1`] = `
+Array [
+  <section
+    className="page-top-banner"
+    id="homepage-banner"
+  >
+    <h1
+      className=""
+    >
+      welcome
+    </h1>
+  </section>,
+  <section
+    className="site-intro-section"
+  >
+    <p
+      className="site-intro-content"
+    >
+      sub-section
+    </p>
+  </section>,
+]
+`;
