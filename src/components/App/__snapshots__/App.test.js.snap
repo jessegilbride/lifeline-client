@@ -83,7 +83,7 @@ exports[`App component renders the UI as expected 1`] = `
       className="page-width-container"
     >
       <small>
-        © IndieNexus 
+        © LifeLine
         2021
       </small>
     </div>
