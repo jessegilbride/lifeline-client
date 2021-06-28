@@ -20,7 +20,7 @@ export default class RegistrationForm extends Component {
       full_name: full_name.value
     })
       .then(user => { // reset the form and trigger next step
-        console.log(user)
+        // console.log(user)
         full_name.value = ''
         user_name.value = ''
         password.value = ''
