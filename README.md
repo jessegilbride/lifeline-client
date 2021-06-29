@@ -25,7 +25,7 @@ Login, make a timeline, add entries to it. Return anytime to relive your history
 &nbsp;
 
 > view timeline entry (mobile)
-<img src='https://github.com/jessegilbride/lifeline-client/blob/main/screenshots/lifeline-demo-timeline-entry-mobile.jpg'= width='400px' />
+<img src='https://github.com/jessegilbride/lifeline-client/blob/main/screenshots/lifeline-demo-timeline-entry-mobile.jpg' width='400px' />
 
 <!-- &nbsp;
 
