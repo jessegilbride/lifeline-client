@@ -2,7 +2,7 @@ import config from '../config'
 import TokenService from './token-service'
 import IdleService from './idle-service'
 import TimelineApiService from './timeline-api-service'
-import App from '../components/App/App'
+// import App from '../components/App/App'
 
 const AuthApiService = {
   postUser(user) {
