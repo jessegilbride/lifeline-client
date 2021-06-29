@@ -1,7 +1,7 @@
 # LifeLine Client
 
 
-Live app: https://lifeline-demo.vercel.app/
+Demo: https://lifeline-demo.vercel.app/
 
 API repo: https://github.com/jessegilbride/lifeline-api
 
