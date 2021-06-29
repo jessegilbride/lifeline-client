@@ -13,8 +13,9 @@
 
 .timeline-container::after {
   position: absolute;
-  left: calc(50% - var(--timeline-width)/2 );
-  background-color: red;
+  /* left: 2rem; */
+  left: calc(50% - var(--timeline-width)/2);
+  background-color: var(--red);
   height: 95%;
   width: var(--timeline-width);
   content: '';
@@ -44,14 +45,10 @@
   font-size: 1rem;
 }
 
-@media (min-width: 48em) {
+/* Desktop styles ... 48em @ 16px/rem = 768px */
+@media screen and (min-width: 48rem) {
   .timeline-container::after {
-    position: absolute;
-    /* left: calc(100% - var(--timeline-width)/2); */
-    left: calc(100%);
-    height: 95%;
-    width: var(--timeline-width);
-    content: '';
+    left: calc(50% - var(--timeline-width)/2);
   }
 
   .btn-fixed {

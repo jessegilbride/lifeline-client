@@ -48,7 +48,11 @@ class App extends Component {
       */
       TokenService.queueCallbackBeforeExpiry( async () => {
         /* the timoue will call this callback just before the token expires */
-        await AuthApiService.postRefreshToken();
+        const response = await AuthApiService.postRefreshToken();
+        if (!response) {
+          this.context.clearTimeline();
+          this.context.clearItems();
+        }
       });
 
       /* Fetch timeline(s) */
@@ -74,7 +78,7 @@ class App extends Component {
     TokenService.clearCallbackBeforeExpiry();
   }
 
-  logoutFromIdle = () => {
+  static logoutFromIdle = () => {
     /* remove the token from localStorage */
     TokenService.clearAuthToken();
     /* remove any queued calls to the refresh endpoint */

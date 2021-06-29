@@ -19,6 +19,7 @@ nav .logo {
   font-size: 2rem;
   padding: 0 1rem;
   text-decoration: none;
+  color: var(--eggplant)
 }
 
 /* menu */

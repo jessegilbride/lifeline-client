@@ -23,7 +23,10 @@ export default class CreateTimelineItem extends Component {
         // console.log('successfully pushed item: ', res)
         this.props.history.push('/timeline')
       })
-      // .catch(this.context.setError); // use local state
+      .catch(error => {
+        console.log(error)
+        // this.context.setError(error)
+      });
 
   };
 

@@ -8,8 +8,8 @@
   content: 'back';
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .cancel-add-item:after {
     content: '<<';
   }
-}
+} */

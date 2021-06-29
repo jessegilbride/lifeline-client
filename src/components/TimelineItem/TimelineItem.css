@@ -24,8 +24,8 @@
     align-items: flex-end;
     padding: 15px;
     position: relative;
-    width: 400px;
-    max-width: 70%;
+    min-width: 120px;
+    max-width: 90%;
     text-align: right;
 }
 

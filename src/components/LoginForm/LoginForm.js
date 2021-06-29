@@ -74,6 +74,9 @@ export default class LoginForm extends Component {
         <button type='submit'>
           Login
         </button>
+        <br />
+        <br />
+        <p>Please note: the back end for this project needs a few seconds to spin up when logging in the first time (after being put to sleep), so please be patient.</p>
       </form>
     )
   }

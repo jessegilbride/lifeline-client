@@ -1,13 +1,15 @@
 #homepage-banner {
-  height: calc(100vh - var(--top-spacing) - 2rem);
-  /* background-image: url('../../images/homepage-banner.jpg'); */
-  background-repeat: no-repeat;
+  position: relative;
+  min-height: 300px;
+  background-color: var(--eggplant);
+  color: var(--mint);
+  /* background-image: url('../../images/homepage-banner.jpg');
+  background-repeat: no-repeat; */
 }
 
 #homepage-banner h1 {
-  margin-block-start: -6rem;
-  padding: 1rem;
-  font-size: 2.4rem;
+  /* padding: 1rem; */
+  font-size: 2.2rem;
   font-weight: normal;
   text-align: center;
   line-height: 1;
@@ -20,29 +22,28 @@ h1 span.bi-line {
   font-style: italic;
 }
 
-.feature {
-  background-color: lightsalmon;
-  color: black;
+.site-intro-section {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+  text-align: center;
 }
 
-.site-intro-section {
-  padding: 1rem 1rem;
-  background-color: var(--eggplant);
-  border-top: 3px solid var(--yellow);
-  border-bottom: 3px solid var(--green);
-  text-align: center;
+.homepage-timeline-graphic {
+  margin: 0 auto;
+  width: 50%;
 }
 
 .site-intro-content {
   font-size: 150%;
   line-height: 1.5;
-  color: var(--mint);
+  color: var(--eggplant);
 }
 
 @media screen and (min-width: 48em) {
-  #homepage-banner {
+  /* #homepage-banner {
     height: calc(100vh - var(--top-spacing) - 2rem);
-  }
+  } */
   #homepage-banner h1 {
     /* margin-block-start: -2rem; */
     font-size: 3.2rem;

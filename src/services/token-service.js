@@ -12,15 +12,16 @@ const TokenService = {
     return window.localStorage.getItem(config.TOKEN_KEY)
   },
   clearAuthToken() {
-    console.info('clearing the auth token...')
+    /* console.info('clearing the auth token...') */
     // leaving these here in case a situation arises where something in storage should not be cleared: 
     /* window.localStorage.removeItem(config.TOKEN_KEY)
     window.localStorage.removeItem(`username`)
     window.localStorage.removeItem(`fullname`) */
     window.localStorage.clear();
     setTimeout(() => {
-      if (!TokenService.hasAuthToken()) {console.log('auth token has been cleared')}
-      else if (TokenService.hasAuthToken()) {console.log('auth token was not removed')}
+      /* if (!TokenService.hasAuthToken()) {console.log('auth token has been cleared')}
+      else if (TokenService.hasAuthToken()) {console.log('auth token was not removed')} */
+      if (TokenService.hasAuthToken()) {console.log('auth token was not removed')}
     }, 2000)
   },
   hasAuthToken() {

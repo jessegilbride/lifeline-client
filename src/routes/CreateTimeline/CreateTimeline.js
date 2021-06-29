@@ -21,7 +21,10 @@ export default class CreateTimeline extends Component {
       .then(() => {
         this.props.history.push('/timeline')
       })
-      // .catch(this.context.setError); // use local state
+      .catch(error => {
+        console.log(error)
+        // this.context.setError(error)
+      });
   };
 
   render() {
