@@ -1,18 +1,29 @@
 #homepage-banner {
   position: relative;
-  min-height: 300px;
+  min-height: calc(90vh - var(--top-spacing));
   background-color: var(--eggplant);
-  color: var(--mint);
-  /* background-image: url('../../images/homepage-banner.jpg');
-  background-repeat: no-repeat; */
+  background-image: url('../../images/long-road-800x440.jpg');
+  background-repeat: no-repeat;
+  background-blend-mode: screen;
+  /* color: var(--mint); */
 }
 
 #homepage-banner h1 {
-  /* padding: 1rem; */
+  position: relative;
+  padding: 1rem;
   font-size: 2.2rem;
   font-weight: normal;
   text-align: center;
   line-height: 1;
+  background-color: #00004242;
+  background-image: linear-gradient(var(--blue), var(--orange));
+  filter: drop-shadow(0 0 3px var(--eggplant));
+  filter: opacity(0.9);
+  color: white;
+}
+
+#homepage-banner h1 span {
+  filter: unset;
 }
 
 h1 span.bi-line {
@@ -29,6 +40,15 @@ h1 span.bi-line {
   text-align: center;
 }
 
+.site-intro-features {
+  margin: 0 auto;
+  text-align: left;
+}
+
+.feature-greyed {
+  color: #666;
+}
+
 .homepage-timeline-graphic {
   margin: 0 auto;
   width: 50%;
@@ -41,9 +61,10 @@ h1 span.bi-line {
 }
 
 @media screen and (min-width: 48em) {
-  /* #homepage-banner {
-    height: calc(100vh - var(--top-spacing) - 2rem);
-  } */
+  #homepage-banner {
+    /* height: calc(100vh - var(--top-spacing) - 2rem); */
+    background-image: url('../../images/long-road-1280x700.jpg');
+  }
   #homepage-banner h1 {
     /* margin-block-start: -2rem; */
     font-size: 3.2rem;
